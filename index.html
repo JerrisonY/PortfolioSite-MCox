@@ -10,8 +10,218 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    </head>
-    <body>
+        
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    </head>
+
+    <body>
+        <header id="desktop-menu">
+            <div id="nav-icon1" class="nav-icon" data-click-state="0">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    
+        <header id="mobile-menu">
+            <div id="nav-icon2" class="nav-icon" data-click-state="0">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    
+        <aside id="menu">
+            <div class="nav-area"></div>
+            <div class="content-area">
+                <div class="menu-body">
+                    <div class="menu-logo">
+                        <a href="index.html" class="link-transition">
+                            <img src="img/j_logo.svg">
+                        </a>
+                    </div>
+                    <div class="menu-nav">
+                        <ul>
+                            <li id="link-about" class="link active-link">About</li>
+                            <li id="link-services" class="link">Services</li>
+                            <li id="link-contact" class="link">Contact</li>
+                            <li id="link-etc" class="link">Etc</li>
+                        </ul>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-info-about">
+                            <h2>Creative<br>Enthusiastic<br>Dedicated</h2>
+                            <h3>Currently I'm a freelance designer who works with a variety of different clients and on many diverse projects.</h3>
+                            <p>I work to design creative solutions that inspire and create memorable relationships between brands and their clients. With a focus on branding and editorial, I strive to bring your vision to life.</p>
+                            <p class="resume"><a href="assets/resume.pdf" target="_blank">VIEW RESUME</a></p>
+                        </div>
+                        <div class="menu-info-services">
+                            <h3>MY SKILLS</h3>
+                            <div class="flex row">
+                                <div>
+                                    <p>
+                                        Branding & Logo<br>
+                                        Editorial Design<br>
+                                        Interface Design<br>
+                                        <br>
+    
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Art Direction<br>
+                                        Photo Editing<br>
+                                        Project Managment
+                                    </p>
+                                </div>
+                            </div>
+    
+                           <!-- <h3>EXPERIENCE & CLIENTS</h3>
+                            <div class="flex row">
+                                <div>
+                                    <p>
+                                        Upshot Agency<br>
+                                        OTHER STUDIO<br>
+                                        Pivotdesign<br>
+                                        What2Design
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        WCST<br>
+                                        Tazo Tea<br>
+                                        Uber<br>
+                                        Capacitr
+                                    </p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="menu-info-contact">
+                            <h2>Let's Bring<br>Your Vision<br>To Life</h2>
+                            <h3>GET IN TOUCH</h3>
+                            <p>
+                                contact@jerrison.ca<br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="menu-info-etc">
+                            <h2>Let's Bringssss<br>Your Vision<br>To Life</h2>
+                            <h3>GET IN TOUCH</h3>
+                            <p>
+                                contact@jerrison.ca<br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-footer">
+                    <div class="social">
+                        <a href="https://www.instagram.com/jerrisonyip/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/jerrison-yip-992289163/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    
+        <aside id="mobile">
+            <div class="nav-area"></div>
+            <div class="content-area">
+                <div class="menu-body">
+                    <div class="menu-logo-mobile">
+                        <a href="index.html" class="link-transition">
+                            <img src="img/j_logo.svg">
+                        </a>
+                    </div>
+                    <div class="menu-nav">
+                        <ul>
+                            <li id="link-about-mobile" class="link active-link">About</li>
+                            <li id="link-services-mobile" class="link">Services</li>
+                            <li id="link-contact-mobile" class="link">Contact</li>
+                            <li id="link-etc-mobile" class="link">Etc</li>
+                        </ul>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-info-about">
+                            <h2>Creative<br>Enthusiastic<br>Dedicated</h2>
+                            <h3>Currently I'm a freelance designer who works with a variety of different clients and on many diverse projects.</h3>
+                            <p>I work to design creative solutions that inspire and create memorable relationships between brands and their clients. With a focus on branding and editorial, I strive to bring your vision to life.</p>
+                            <p class="resume"><a href="assets/resume.pdf" target="_blank">VIEW RESUME</a></p>
+                        </div>
+                        <div class="menu-info-services">
+                            <h3>MY SKILLS</h3>
+                            <div class="flex row">
+                                <div>
+                                    <p>Branding & Logo<br>
+                                        Editorial Design<br>
+                                        Interface Design
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="fixed-width">
+                                        Art Direction<br>
+                                        Photo Editing<br>
+                                        Project Managment</p>
+                                </div>
+                            </div>
+    
+                          <!--  <h3>EXPERIENCE & CLIENTS</h3>
+                            <div class="flex row">
+                                <div>
+                                    <p>Upshot Agency<br>OTHER STUDIO<br>Pivotdesign<br>What2Design</p>
+                                </div>
+                                <div>
+                                    <p class="fixed-width">WCST<br>Tazo Tea<br>Uber<br>Capacitr</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="menu-info-contact">
+                            <h2>Let's Bring<br>Your Vision<br>To Life</h2>
+                            <h3>GET IN TOUCH</h3>
+                            <p>
+                                contact@jerrison.ca<br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="menu-info-etc">
+                            <h2>Let's Bringssss<br>Your Vision<br>To Life</h2>
+                            <h3>GET IN TOUCH</h3>
+                            <p>
+                                contact@jerrison.ca<br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-footer">
+                    <div class="social">
+                        <a href="https://www.instagram.com/jerrisonyip/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/jerrison-yip-992289163/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+
+
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
