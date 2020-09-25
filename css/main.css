@@ -10,7 +10,7 @@ html {
 
 body {
     /* background: #1A1A1A; */
-    color: #fff;
+    color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -368,9 +368,11 @@ aside#mobile {
     transition: all .25s ease-in-out;
 }
 
+/* hover color for hamburger icon */
 .nav-icon:hover span,
 .nav-icon:active span {
     background: #FC5457;
+    background: blue;
 }
 
 .nav-icon span:nth-child(1) {
@@ -407,26 +409,75 @@ aside#mobile {
 }
 
 
+/* **********************************************************
+    Landing Container Style
+*********************************************************** */
+
+
+.landing-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 50px 30px;
+    padding: 100px 80px 0 80px ;
+}
+
+.landing-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    object-fit: cover;    
+    object-position: 50% 50%;
+    height: 40vh;
+    min-height: 200px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}
+
+.landing-item-text {
+    margin: 15px 0;
+    font-size: calc(13px + (22 - 13) * ((100vw - 900px) / (3800 - 900)));
+}
 
 
 
 
 
 
+/* **********************************************************
+    Media Queries
+*********************************************************** */
 
 
+@media only screen and (max-width: 1200px) {
+    
+    .img-container img {
+        height: 30vh;
+    }
+}
 
 
+@media only screen and (max-width: 900px) {
+    
+    .landing-container {
+        grid-template-columns: 1fr;
+        grip-row-gap: 30px;
+    }
 
-
-
-
-
-
-
-
-
-
+    .img-container img {
+        height: 20vh;
+    }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -465,6 +516,9 @@ aside#mobile {
         display: flex;
     }
 
+    .landing-container {
+        padding: 0 25px;
+    }
 }
 
 
