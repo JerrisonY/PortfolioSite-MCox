@@ -414,6 +414,26 @@ aside#mobile {
 
 
 /* **********************************************************
+    Header/Info Container Style
+*********************************************************** */
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px 0 80px;
+    
+}
+
+.info-container P {
+    color: #8a8a8a;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    width: 30vw;
+}
+
+
+/* **********************************************************
     Landing Container Style
 *********************************************************** */
 
@@ -422,7 +442,7 @@ aside#mobile {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-gap: 50px 30px;
-    padding: 100px 80px 100px 80px ;
+    padding: 70px 80px 100px 80px ;
 }
 
 .landing-item {
@@ -512,6 +532,12 @@ aside#mobile {
     .img-container img {
         height: 30vh;
     }
+
+    .info-container P {
+        font-size: 1.1em;
+        width: 40vw;
+    }
+
 }
 
 
@@ -532,6 +558,16 @@ aside#mobile {
 
     .footer-container {
         padding: 50px 25px 50px 80px;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+    
+    .info-container P {
+        padding: 30px 0 0 0;
+        width: 100%;
+        font-size: 1.2em;
     }
 
 }
@@ -571,6 +607,14 @@ aside#mobile {
 
     aside#mobile {
         display: flex;
+    }
+
+    .info-container {
+        padding: 60px 25px 30px 25px;
+    }
+    
+    .info-container P {
+        display: none;
     }
 
     .landing-container {
