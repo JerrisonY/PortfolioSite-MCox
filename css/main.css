@@ -295,6 +295,10 @@ aside#mobile {
     flex-direction: row;
 }
 
+.between {
+    justify-content: space-between;
+}
+
 .menu-info-services,
 .menu-info-contact {
     opacity: 0;
@@ -418,7 +422,7 @@ aside#mobile {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-gap: 50px 30px;
-    padding: 100px 80px 0 80px ;
+    padding: 100px 80px 100px 80px ;
 }
 
 .landing-item {
@@ -446,13 +450,53 @@ aside#mobile {
 
 .landing-item-text {
     margin: 15px 0;
-    font-size: calc(13px + (22 - 13) * ((100vw - 900px) / (3800 - 900)));
+    font-size: calc(12px + (20 - 13) * ((100vw - 900px) / (3800 - 900)));
 }
 
 
+/* **********************************************************
+    Footer Styles
+*********************************************************** */
 
 
+.footer-container {
+    padding: 50px 80px;
+    color: #555;
+}
 
+.footer-container h1 {
+    font-weight: 500;
+}
+
+.footer-container h2 a {
+    color: #555;
+    opacity: 0.8;
+    font-weight: 400;
+    transition: 0.1s;
+}
+
+.footer-container h2 a:hover {
+    color: #000;
+}
+
+.links-container {
+    padding: 130px 0 0 0;
+    align-items: center;
+}
+
+.links-container p {
+    font-size: 0.8em;
+}
+
+.social-links {
+    color: #AEAEAE;
+    padding: 0 5px;
+    transition: 0.3s;
+}
+
+.social-links:hover {
+    color: #000;
+}
 
 /* **********************************************************
     Media Queries
@@ -460,6 +504,10 @@ aside#mobile {
 
 
 @media only screen and (max-width: 1200px) {
+    
+    .landing-container {
+        grid-row-gap: 20px;
+    }
     
     .img-container img {
         height: 30vh;
@@ -470,13 +518,22 @@ aside#mobile {
 @media only screen and (max-width: 900px) {
     
     .landing-container {
-        grid-template-columns: 1fr;
-        grip-row-gap: 30px;
+        grip-row-gap: 10px;
+        padding-right: 25px;
     }
 
     .img-container img {
         height: 20vh;
     }
+
+    .landing-item-text {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        padding: 50px 25px 50px 80px;
+    }
+
 }
 
 
@@ -518,7 +575,32 @@ aside#mobile {
 
     .landing-container {
         padding: 0 25px;
+        grid-template-columns: 1fr;
+        /* grip-row-gap: 30px; */
     }
+
+    .footer-container {
+        padding: 50px 25px 30px 25px;
+    }
+
+    .footer-container h1 {
+        line-height: 1em;
+        font-size: 1.4em;
+    }
+
+    .footer-container h2 {
+        font-size: 1.3em;
+    }
+
+    .links-container p {
+        font-size: 0.7em;
+    }
+
+    .social-links {
+        font-size: 0.8em;
+        padding: 0 2px;
+    }
+
 }
 
 
