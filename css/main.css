@@ -283,7 +283,8 @@ aside#mobile {
 
 .menu-info-about a:hover,
 .menu-info-about a:active {
-    color: #FC5457;
+    color: grey;
+    cursor: pointer;
 }
 
 
@@ -306,6 +307,18 @@ aside#mobile {
 
 .menu-info-etc {
     opacity: 0;
+}
+
+.menu-info-etc {
+    line-height: 1.5rem;
+    font-size: 0.87rem;
+}
+
+.testimonial-name {
+    /* opacity: 0.7; */
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .menu-info-services h3 {
@@ -376,7 +389,7 @@ aside#mobile {
 .nav-icon:hover span,
 .nav-icon:active span {
     background: #FC5457;
-    background: blue;
+    background: grey;
 }
 
 .nav-icon span:nth-child(1) {
@@ -429,7 +442,7 @@ aside#mobile {
     color: #8a8a8a;
     line-height: 1.2em;
     font-size: 1.2em;
-    width: 30vw;
+    width: 32vw;
 }
 
 
