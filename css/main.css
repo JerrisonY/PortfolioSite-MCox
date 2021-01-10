@@ -6,6 +6,7 @@
 
 html {
     opacity: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -445,6 +446,9 @@ aside#mobile {
     width: 32vw;
 }
 
+.info-container img {
+    height: 70px;
+}
 
 /* **********************************************************
     Landing Container Style
@@ -486,6 +490,73 @@ aside#mobile {
     font-size: calc(12px + (20 - 13) * ((100vw - 900px) / (3800 - 900)));
 }
 
+
+/* **********************************************************
+    Project Page Styles
+*********************************************************** */
+
+.project-page-header img {
+    width: 100%;
+    padding-left: 80px;
+}
+
+.project-page-info {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 50px;
+    margin: 0 auto;
+    padding: 80px 0;
+    line-height: 1.3em;
+}
+
+.project-page-info h2 {
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.project-page-info-left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+
+.project-page-info-left p {
+    font-weight: 500;
+}
+
+.project-page-main img {
+    width: 100%;
+    padding-left: 80px;
+}
+
+.project-page-main .padding-80 { 
+    padding-left: 0px;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.page-navigation i {
+    padding: 0 5px;
+}
+
+.page-navigation a {
+    text-decoration: none;
+    color: grey;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.page-navigation a:hover {
+    color: #000;
+}
 
 /* **********************************************************
     Footer Styles
@@ -531,6 +602,10 @@ aside#mobile {
     color: #000;
 }
 
+.animation-logo img {
+    width: 40px;
+}
+
 /* **********************************************************
     Media Queries
 *********************************************************** */
@@ -573,6 +648,10 @@ aside#mobile {
         padding: 50px 25px 50px 80px;
     }
 
+    .links-container {
+        padding: 70px 0 0 0;
+    }
+
     .info-container {
         flex-direction: column;
     }
@@ -583,6 +662,16 @@ aside#mobile {
         font-size: 1.2em;
     }
 
+    .project-page-info {
+        grid-template-columns: 1fr;
+        width: 500px;
+        grid-row-gap: 30px;
+    }
+
+    .project-page-info-left {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -658,6 +747,26 @@ aside#mobile {
         padding: 0 2px;
     }
 
+    .project-page-header img {
+        padding-left: 0;
+    }
+
+    .project-page-main img {
+        padding-left: 0;
+    }
+
+    .project-page-info {
+        width: 300px;
+    }
+
+    .project-page-info-left {
+        grid-column-gap: 20px;
+    }
+
+    .page-navigation {
+        padding: 30px 30px 10px 30px;
+        font-size: 0.7em;
+    }
 }
 
 
