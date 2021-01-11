@@ -111,7 +111,7 @@ aside#mobile {
     padding: 50px;
     /* overflow: scroll; */
 
-    overflow: hidden;
+    overflow: auto;
 }
 
 .menu-logo {
