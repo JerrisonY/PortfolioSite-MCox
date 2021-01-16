@@ -447,7 +447,7 @@ aside#mobile {
 }
 
 .info-container img {
-    height: 70px;
+    height: 90px;
 }
 
 /* **********************************************************
@@ -603,7 +603,7 @@ aside#mobile {
 }
 
 .animation-logo img {
-    width: 40px;
+    width: 90px;
 }
 
 /* **********************************************************
@@ -713,10 +713,15 @@ aside#mobile {
 
     .info-container {
         padding: 60px 25px 30px 25px;
+        align-items: center;
     }
     
     .info-container P {
         display: none;
+    }
+    
+    .info-container img {
+        height: 110px;
     }
 
     .landing-container {
