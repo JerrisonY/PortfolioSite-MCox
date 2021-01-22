@@ -122,9 +122,11 @@ aside#mobile {
     margin-bottom: 25px;
 }
 
+
 .menu-logo img,
 .menu-logo-mobile img {
-    height: 32px;
+    height: 52px;
+    margin-left: -10px;
 }
 
 .menu-nav ul {
@@ -247,6 +249,17 @@ aside#mobile {
     top: 0;
 }
 
+.menu-info-services P > a {
+    text-decoration: none;
+    color: #1A1A1A;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-info-services p > a:hover {
+    color: grey;
+}
+
 .menu-info-etc {
     position: absolute;
     top: 0;
@@ -288,6 +301,11 @@ aside#mobile {
     cursor: pointer;
 }
 
+.about- img {
+    width: 100%;
+    border-radius: 0.3em;
+    padding-bottom: 20px;
+}
 
 .flex {
     display: flex;
@@ -443,7 +461,7 @@ aside#mobile {
     color: #8a8a8a;
     line-height: 1.2em;
     font-size: 1.2em;
-    width: 32vw;
+    width: 30vw;
 }
 
 .info-container img {
