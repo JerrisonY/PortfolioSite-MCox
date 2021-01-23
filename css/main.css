@@ -379,6 +379,16 @@ aside#mobile {
     margin-bottom: 2.4rem;
 }
 
+.menu-info-contact a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+
+.menu-info-contact a:hover {
+    color: grey;
+}
+
 /* Icon 3 */
 
 .nav-icon {
